@@ -267,7 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad232c8c966560d46a015f25c9b7d9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipOfTheBarrel: {fileID: 7547078311597876975}
+  tipOfTheBarrels:
+  - {fileID: 7547078311597876975}
   muzzleFlash: {fileID: 1336949550903370, guid: 4543ab5e3d405ec40a8d4e9aa5165030, type: 3}
   muzzleFlashRotationAdjustment: {x: 0, y: 100, z: 0}
   recoilAmount: {x: 10, y: 0, z: 0}

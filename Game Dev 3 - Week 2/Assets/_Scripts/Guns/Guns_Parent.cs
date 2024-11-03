@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -56,10 +54,10 @@ namespace GameDevWithMarco.Guns
 
         public virtual void MuzzleFlash()
         {
-            foreach (Transform barrel in tipOfTheBarrels)
+            foreach (Transform currentTip in tipOfTheBarrels)
             {
                 //THe first line will spawn the muzzle flash
-                GameObject flash = Instantiate(muzzleFlash, barrel.position, transform.rotation);
+                GameObject flash = Instantiate(muzzleFlash, currentTip.position, transform.rotation);
                 //The next line will adjust the rotation of it
                 flash.transform.Rotate(muzzleFlashRotationAdjustment);
             }     
